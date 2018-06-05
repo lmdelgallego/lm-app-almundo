@@ -1,4 +1,4 @@
-let backenHost;
+let backendHost;
 
 const hostname = window && window.location && window.location.hostname;
 
