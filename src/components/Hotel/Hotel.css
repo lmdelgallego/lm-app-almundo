@@ -1,0 +1,90 @@
+.Hotel{
+  background: white;
+  margin-bottom: 15px;
+  padding: 8px;
+  box-shadow: 0 2px 2px #ccc;
+  display: flex;
+}
+
+.Hotel .image{
+  width: 350px;
+  height: 233px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.Hotel .image img{
+  width: auto;
+  max-width: 100%;
+}
+
+.Hotel .description{
+  flex: 1;
+  padding: 0px 18px;
+  justify-content: center;
+}
+
+.Hotel .description h3{
+  margin: 0;
+  color: #366daa;
+  margin-bottom: 10px;
+}
+
+.Hotel .price-description{
+  max-width: 250px;
+  display: flex;
+  border-left: 1px dashed #ccc;
+  padding: 35px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-description .label{
+  font-size: 12px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.price-description .price{
+  display: flex;
+  color: #c66700;
+  font-size: 36px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price .currency{
+  font-size: 0.6em;
+  margin-right: 5px;
+}
+.price .amount{
+  font-weight: bold;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) { 
+  .Hotel{
+    flex-direction: column;
+  }
+
+  .Hotel .description{
+    margin-bottom: 20px;
+  }
+
+  .Hotel .image{
+    width: inherit;
+    flex: 1;
+    margin-bottom: 10px; 
+  }
+
+  .Hotel .price-description{
+    flex: 1;
+    border-left: none;
+    border-top: 1px dashed #ccc;
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  color: #5e5e5e;
+}
+
+button{
+  background: #182d76;
+  color: white;
+  font-size: 16px;
+  padding: 10px 40px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button:hover, button:focus{
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}

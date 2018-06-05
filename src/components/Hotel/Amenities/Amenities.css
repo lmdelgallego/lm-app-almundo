@@ -1,0 +1,19 @@
+.Amenities{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Amenities .Amenity{
+  margin-right: 10px;
+}
+
+.Amenities .Amenity svg{
+  width: 25px;
+  height: 25px;
+}
+
+.Amenities .Amenity svg path{
+  fill: #484848;
+}

@@ -1,0 +1,23 @@
+.Content{
+  flex-direction: column;
+  display: flex;
+  flex: 4;
+  width: 100%;
+  margin: 0px 8px;
+}
+
+/* Landscape phones and down */
+/* @media (max-width: 480px) { ... } */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) { 
+  .Content{
+    margin: 0 0 10px 0;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+/* @media (min-width: 768px) and (max-width: 979px) { ... } */
+
+/* Large desktop */
+/* @media (min-width: 1200px) { ... } */

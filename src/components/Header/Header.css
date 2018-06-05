@@ -1,0 +1,14 @@
+.Header{
+  background-color: #1a3172;
+  padding: 25px 10px;
+}
+
+@media (max-width: 768px) { 
+  .Header{
+    padding: 10px;
+  }
+  .Header img{
+    height: 30px;
+  }
+  
+}

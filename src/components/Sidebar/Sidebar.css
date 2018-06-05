@@ -1,0 +1,88 @@
+.Sidebar{
+  display: flex;
+  margin: 0px 8px;
+  flex: 1;
+  background: white;
+  padding: 0;
+  box-shadow: 0 2px 2px #ccc;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Sidebar .box{
+  padding: 16px;
+  border-bottom: 4px solid #f1f1f2;
+}
+
+.Sidebar .box .search-box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.Sidebar .box .search-box button{
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.Sidebar .filter-starts{
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+}
+.Sidebar .filter-starts li{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+.Sidebar .filter-starts li input{
+  margin-right: 8px;
+}
+.Sidebar .filter-starts li svg{
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+.Sidebar .filter-starts li svg path{
+  fill: #edb90d;
+}
+
+.Sidebar .box:last-of-type{
+  border-bottom: transparent; 
+}
+
+.Sidebar h3{
+  
+}
+
+.Sidebar h4{
+  color: #366daa;
+}
+.Sidebar h4 svg{
+  width: 14px;
+  height: 14px;;
+}
+.Sidebar h4 svg path{
+  fill: #366daa
+}
+
+@media (max-width: 920px) {
+  
+}
+
+@media (max-width: 768px) { 
+  .Sidebar{
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    margin: -24px -16px 10px -16px;
+    transition: 0.5s all ease;
+  }
+
+  .Sidebar.show{
+    max-height: 300px;
+    overflow: auto;
+  }
+  
+}
