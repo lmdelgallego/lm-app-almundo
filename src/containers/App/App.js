@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { API_ROOT } from '../../api-config';
 import './App.css';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
@@ -25,17 +26,17 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch('http://0.0.0.0:1234/hotels')
+    fetch(`${API_ROOT}/hotels`)
     .then( results => results.json() )
     .then( data => {
       this.setState({hotels: data});
     })
   }
 
-  
+
   handleSearch(){
     const inputValue = this.searchRef.current.value;
-    fetch(`http://0.0.0.0:1234/hotels?name=${inputValue}`)
+    fetch(`${API_ROOT}/hotels?name=${inputValue}`)
     .then( results => results.json() )
     .then( data => {
       this.setState({hotels: data});
@@ -54,18 +55,18 @@ class App extends Component {
       this.selectedCheckboxes.add(num);
     }
     arrayStars = [...this.selectedCheckboxes];
-    
+
     if(arrayStars.length > 0){
       query = `?stars=[${arrayStars}]`;
     }
 
 
-    fetch(`http://0.0.0.0:1234/hotels${query}`)
+    fetch(`${API_ROOT}/hotels${query}`)
     .then( results => results.json() )
     .then( data => this.setState({hotels: data}))
   }
 
-  handleToggleSidebar(){  
+  handleToggleSidebar(){
     this.setState({showSidebar: !this.state.showSidebar});
   }
 
